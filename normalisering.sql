@@ -15,13 +15,13 @@ CREATE TABLE `UNF` (
     `MobilePhone2` VARCHAR(15)
 )  ENGINE=INNODB;
 
-load data infile '/var/lib/mysql-files/denormalized-data.csv'
-into table UNF
-character set latin1
-fields terminated by ','
-enclosed '"'
-lines terminated by '\n'
-ignore 1 rows;
+	LOAD DATA INFILE '/var/lib/mysql-files/denormalized-data.csv'
+INTO TABLE UNF
+CHARACTER SET latin1
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
 
 drop table if exists Student;
 
