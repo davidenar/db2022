@@ -1,1 +1,1 @@
-# db2022
+# edu-crud-jdbc
