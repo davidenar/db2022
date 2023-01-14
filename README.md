@@ -60,4 +60,17 @@ erDiagram
 
 ## Normalisera databas
 
+git clone https://github.com/davidenar/db2022
+cd db2022
+docker start iths-mysql
 docker exec -i iths-mysql mysql -uiths -piths < normalization.sql
+
+## CRUD
+
+docker exec -i iths-mysql mysql -uiths -piths < db.sql
+idea.cmd . # för att öppna applikationen i intellij
+gradle check 
+
+
+
+
