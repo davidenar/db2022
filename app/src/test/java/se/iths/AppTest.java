@@ -1,18 +1,19 @@
 package se.iths;
 
-import java.sql.*;
 
 import org.junit.jupiter.api.*;
 
+import java.sql.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class AppTest {
-
     private static final String JDBC_CONNECTION = "jdbc:mysql://localhost:3306/iths";
     private static final String JDBC_USER = "iths";
     private static final String JDBC_PASSWORD = "iths";
-    private static final String TEST_USER = "Jane Doe";
-    private static final String TEST_ROLE = "Admin";
+    private static final String TEST_USER ="Jane Doe";
+    private static final String TEST_ROLE ="Admin";
     private static final String TEST_NEWROLE ="User";
     private static long actualIdAfterInsert;
 
